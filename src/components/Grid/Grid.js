@@ -22,12 +22,11 @@ export const Row = ({ children, height }) => {
   `;
   return <StyledRow height={height}>{children}</StyledRow>;
 };
-
+const StyledCol = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+`;
 export const Col = ({ children }) => {
-  const StyledCol = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  `;
   return <StyledCol>{children}</StyledCol>;
 };
